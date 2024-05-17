@@ -1,9 +1,10 @@
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
+            <!--ORIGINAL STRUCTURE-->
             <div class="col-lg-4 col-sm-6">
                 <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/3D-python-engine-port.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -17,80 +18,113 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/selk-port.png" class="img-responsive" alt="">
+                <button class="collapsible portfolio-box">
+                    <img src="img/portfolio/3D-python-engine-port.png" class="img-responsive img-contain" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
                                 Game Design
                             </div>
                             <div class="project-name">
-                                Selk
+                                3D Engine
                             </div>
                         </div>
                     </div>
-                </a>
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                <button class="collapsible portfolio-box">
+                    <img src="img/portfolio/P3DE-Portfolio.png" class="img-responsive img-contain" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
                                 Game Design
                             </div>
                             <div class="project-name">
-                                Raycasting Engine
+                                3D Engine
                             </div>
                         </div>
                     </div>
-                </a>
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                <button class="collapsible portfolio-box">
+                    <img src="img/portfolio/Selk-Portfolio.png" class="img-responsive img-contain" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Cybersecurity
+                                Game Design
                             </div>
                             <div class="project-name">
-                                Cyberstorm
+                                3D Engine
                             </div>
                         </div>
                     </div>
-                </a>
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                <button class="collapsible portfolio-box">
+                    <img src="img/portfolio/3D-python-engine-port.png" class="img-responsive img-contain" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Cybersecurity
+                                Game Design
                             </div>
                             <div class="project-name">
-                                Cyber Challenge
+                                3D Engine
                             </div>
                         </div>
                     </div>
-                </a>
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <img src="img/portfolio/ff.xyz-canvas-port.png" class="img-responsive" alt="">
+                <button class="collapsible portfolio-box">
+                    <img src="img/portfolio/3D-python-engine-port.png" class="img-responsive img-contain" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
-                                Web Application
+                                Game Design
                             </div>
                             <div class="project-name">
-                                FrankieFrankie Canvas
+                                3D Engine
                             </div>
                         </div>
                     </div>
-                </a>
+                </button>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
