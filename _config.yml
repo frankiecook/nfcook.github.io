@@ -11,3 +11,66 @@ linkedin_url: frankie-cook-142164164
 
 # Build settings
 markdown: kramdown
+
+# header
+header_title: blah blah computer science
+header_description: My passion is computer science, now take a look at what I've done! PLZ GIVME JOOB
+
+# about
+about_title: Louisiana Tech University 2024 Alumni
+about_description: stop raiding our refrigerator
+
+# Portfolio Information
+project01_name: Dijkstra’s Implementation
+project01_category: Computer Networks
+project01_date: February 18, 2024
+project01_img: Dijkstra-Folio.png
+project01_description: "A program that implementation of Dijkstra’s algorithm to compute the shortest path tree for a given CSV file that represents topology data. Program is executed through a terminal interface."
+
+project02_name: Ray-tracing Engine
+project02_category: Game Development
+project02_date: Feb. 17, 2024
+project02_img: Raytracing-Folio.png
+project02_description: "A ray-tracing engine that is capable of rendering spheres and planes, as well as calculating reflective and refractive rays. Allows for the maximum distance and the number of reflections that occur to be controlled."
+
+project03_name: 3D Game Engine
+project03_category: Game Development
+project03_date: Jan. 22, 2024
+project03_img: 3D-Engine-Folio.png
+project03_description: "A 3D engine built from nothing that is capable of rending objects, such as pyramids, boxes, and cylinders. Transformation adjustments can be made to the currently selected object, such as rotation, scaling, translation, and a reset option. All is accessible through a minimal GUI. Most impressively, five render and shading modes are available: wire-frame, polygon fill, flat shading, Gouraud shading, and Phong shading."
+
+project04_name: Selk
+project04_category: Game Development
+project04_date: Feb. 20, 2024
+project04_img: Selk-Folio.png
+project04_description: "A 3D engine built from nothing that is capable of rending objects, such as pyramids, boxes, and cylinders. Transformation adjustments can be made to the currently selected object, such as rotation, scaling, translation, and a reset option. All is accessible through a minimal GUI. Most impressively, five render and shading modes are available: wire-frame, polygon fill, flat shading, Gouraud shading, and Phong shading."
+
+project05_name: Axolotl
+project05_category: Cyber Security
+project05_date: Feb. 24, 2024
+project05_img: 1.png
+project05_description: "A cyber security challenge where the programmer is tasked with locating information to the whereabouts of their stolen dog. Organized into three levels it encourages the user to dig through a file system that contains some useful c files, a key, some useless files,  and a pygame application. Can you find your dog?"
+
+project06_name: Eternal Knight
+project06_category: Game Development
+project06_date: May 11, 2019
+project06_img: Eternal-Knight-Folio.png
+project06_description: "Participated in a 48 hour video game competion, but ironically I was really only in charge of music. Our project did come in 1st place however!"
+
+project07_name: StupidDuck
+project07_category: Game Development
+project07_date: Jan. 24, 2023
+project07_img: StupidDuck-Folio.png
+project07_description: "An impressive 2D web-engine for a silly game that was built from scratch following Travis Vronman’s tutorial. Much was learned about game engines and how developers tend to tackle solutions. I found myself making more buses than city transit, because the engine has to communicate with itself in so many ways. As seen in other projects, I incorporated my own touch control device around the game with full-screen capability."
+
+project08_name: P3DE
+project08_category: Game Development
+project08_date: July 3, 2023
+project08_img: P3DE-Folio.png
+project08_description: "An earnest attempt at recreating the original raycasting engines from the 90s for Doom/Wolfenstein type games. Nothing but a pseudo 3D environment, but I had fun with this sandbox! No goal exists, but you do load into a demo room with textures on walls, some animated textures, and the player has a weapon that makes walls disappear. As seen in other projects, I incorporated my own touch control device around the game with full-screen capability."
+
+project09_name: Sand Simulator
+project09_category: Game Development
+project09_date: Dec. 26, 2020
+project09_img: Sand-Simulator-Folio.png
+project09_description: "One of my earliest web-dev projects and is a very simplified 2D physics engine that simulates sand. Grains of sand rain down from the sky as pixels, which you can control the direction of. A much later addition to this was incorporating the touch control setup I use on all my projects."
