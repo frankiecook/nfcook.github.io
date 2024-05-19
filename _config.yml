@@ -2,12 +2,12 @@
 title: Frankie Cook
 email: nfcook@pm.me
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: "nfcook.github.io" # the subpath of your site, e.g. /blog/
+# baseurl: "nfcook.github.io" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 twitter_username: frankiefrankie
 github_username: frankiecook
-linkedin_url: frankie-cook-142164164
+linkedin_url: https://www.linkedin.com/in/frankie-cook-142164164/
 
 # Build settings
 markdown: kramdown
@@ -19,6 +19,20 @@ header_description: My passion is computer science, now take a look at what I've
 # about
 about_title: Louisiana Tech University 2024 Alumni
 about_description: stop raiding our refrigerator
+
+# services
+service_title: What I love about coding!
+service01_title: Programming Teacher
+service01_description: Always excited to teach computer science in a 1-on-1 setting! Please reach out if you're intereset!
+service02_title: FrankieFrankie.xyz
+service02_description: "FrankieFrankie.xyz is my true playground for web development! Many projects from ff.xyz are listed here!"
+service03_title: Languages
+service03_description: Primarly Python, Java, C/C++, HTML, JavaScrip, CSS, TypeScript, and SQL!
+service04_title: REPLACE
+service04_description: REPLACE
+
+# contact
+contact_title: Let's Get In Touch!
 
 # Portfolio Information
 project01_name: Dijkstra’s Implementation
@@ -48,7 +62,7 @@ project04_description: "A 3D engine built from nothing that is capable of rendin
 project05_name: Axolotl
 project05_category: Cyber Security
 project05_date: Feb. 24, 2024
-project05_img: 1.png
+project05_img: 1.jpg
 project05_description: "A cyber security challenge where the programmer is tasked with locating information to the whereabouts of their stolen dog. Organized into three levels it encourages the user to dig through a file system that contains some useful c files, a key, some useless files,  and a pygame application. Can you find your dog?"
 
 project06_name: Eternal Knight

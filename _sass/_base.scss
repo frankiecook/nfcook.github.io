@@ -382,6 +382,12 @@ body {
     object-fit: cover;
 }
 
+.flx-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Overlap Between Rulesets
 *   Probably most likeyl lots of overlap and redundant and cancellation
 *   between all of these rulesets
