@@ -62,7 +62,7 @@ project04_description: "A 3D engine built from nothing that is capable of rendin
 project05_name: Axolotl
 project05_category: Cyber Security
 project05_date: Feb. 24, 2024
-project05_img: 1.jpg
+project05_img: Axolotl-Portfolio.png
 project05_description: "A cyber security challenge where the programmer is tasked with locating information to the whereabouts of their stolen dog. Organized into three levels it encourages the user to dig through a file system that contains some useful c files, a key, some useless files,  and a pygame application. Can you find your dog?"
 
 project06_name: Eternal Knight
