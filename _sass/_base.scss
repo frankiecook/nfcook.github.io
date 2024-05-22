@@ -382,9 +382,16 @@ body {
     object-fit: cover;
 }
 
-.flx-center {
+.portfolio-element {
+    margin: 1%;
+    width: 30%;
+}
+
+.new-portfolio-container {
+    width: 100%;
+    height: auto;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
