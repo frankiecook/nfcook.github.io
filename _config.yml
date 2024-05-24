@@ -13,21 +13,21 @@ linkedin_url: https://www.linkedin.com/in/frankie-cook-142164164/
 markdown: kramdown
 
 # header
-header_title: blah blah computer science
-header_description: My passion is computer science, now take a look at what I've done! PLZ GIVME JOOB
+header_title: Hi, my name is Frankie Cook.
+header_description: I code things into life.
 
 # about
 about_title: Louisiana Tech University 2024 Alumni
-about_description: stop raiding our refrigerator
+about_description: I am a nerd from northern Louisiana who found a passion in Computer Science and as of March 2024, I graduated from Louisiana Tech University with a Bachelor's in Computer Science. I am very excited about the future and where I'll end up, but my strongest interest are in software development and web-development.
 
 # services
-service_title: What I love about coding!
+service_title: Computer Science
 service01_title: Programming Teacher
-service01_description: Always excited to teach computer science in a 1-on-1 setting! Please reach out if you're intereset!
+service01_description: Always excited to teach computer science in a 1-on-1 setting!
 service02_title: FrankieFrankie.xyz
-service02_description: "FrankieFrankie.xyz is my true playground for web development! Many projects from ff.xyz are listed here!"
+service02_description: "FrankieFrankie.xyz is my true playground for web development! It's not a pretty website, but many projects from ff.xyz are listed here!"
 service03_title: Languages
-service03_description: Primarly Python, Java, C/C++, HTML, JavaScrip, CSS, TypeScript, and SQL!
+service03_description: Python, Java, C/C++, HTML, JavaScrip, CSS, TypeScript, and SQL
 service04_title: REPLACE
 service04_description: REPLACE
 
