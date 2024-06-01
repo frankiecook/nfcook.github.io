@@ -389,6 +389,15 @@ body {
   padding: 0;
   width: 100%;
 }
+.collapsible:focus {
+  background-color: black;
+}
+.collapsible:focus .img-static {
+  display: none;
+}
+.collapsible:focus .img-gif {
+  display: block;
+}
 
 .content {
   padding: 0 18px;
@@ -412,6 +421,10 @@ body {
   border-radius: 5px;
   /* object-fit cover will clip the image to fit the container*/
   object-fit: cover;
+}
+
+.img-gif {
+  display: none;
 }
 
 .portfolio-element {

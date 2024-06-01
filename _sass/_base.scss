@@ -358,6 +358,17 @@ body {
     outline: none;
     padding: 0;
     width: 100%;
+
+    &:focus {
+        background-color: black;
+        .img-static {
+            display: none;
+        }
+
+        .img-gif {
+            display: block;
+        }
+    }
 }
 
 .content {
@@ -387,10 +398,24 @@ body {
     object-fit: cover;
 }
 
+.img-gif {
+    display: none;
+}
+
 .portfolio-element {
     margin: 1%;
     width: 436px;
     aspect-ratio: 2 / 1;
+
+    // &:hover {
+    //     .img-static {
+    //         display: none;
+    //     }
+
+    //     .img-gif {
+    //         display: block;
+    //     }
+    // }
 }
 
 .new-portfolio-container {

@@ -38,14 +38,16 @@ contact_title: Let's Get In Touch!
 project01_name: Jekyll Website
 project01_category: Web Development
 project01_date: May 30, 2024
-project01_img: noimage.png
+project01_imgs: noimage.png
+project01_img: animatetest.gif
 project01_description: "Hey, the very website you’re on right now! Jekyll is a framework for building web projects and generates static sites using Ruby. It’s fairly simple and I was able to get my website running through Netlify and Github.
 "
 
 project02_name: Axolotl
 project02_category: Cyber Security
 project02_date: Feb. 24, 2024
-project02_img: Axolotl-Portfolio.png
+project02_imgs: Axolotl-Portfolio.png
+project02_img: animatetest.gif
 project02_description: "A cyber security challenge where the programmer is tasked with locating information concerning the whereabouts of their stolen dog. Organized into three levels it encourages the user to dig through a file system that contains some useful c files, a key, and a pygame application. Will you ever find your dog?
 "
 
