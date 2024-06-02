@@ -358,16 +358,16 @@ body {
     outline: none;
     padding: 0;
     width: 100%;
+}
 
-    &:focus {
-        background-color: black;
-        .img-static {
-            display: none;
-        }
+/* only applied when button is clicked (through JS) */
+.button-clicked {
+    .img-static {
+        display: none;
+    }
 
-        .img-gif {
-            display: block;
-        }
+    .img-gif {
+        display: block;
     }
 }
 
@@ -375,16 +375,19 @@ body {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
+    font-size: small;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
 
 .content_text {
     margin-top: 2%;
+    font-size: inherit;
 }
 
 .content_date {
     text-align: right;
+    font-size: inherit;
 }
 
 .img-contain {

@@ -389,13 +389,12 @@ body {
   padding: 0;
   width: 100%;
 }
-.collapsible:focus {
-  background-color: black;
-}
-.collapsible:focus .img-static {
+
+/* only applied when button is clicked (through JS) */
+.button-clicked .img-static {
   display: none;
 }
-.collapsible:focus .img-gif {
+.button-clicked .img-gif {
   display: block;
 }
 
@@ -403,16 +402,19 @@ body {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
+  font-size: small;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 
 .content_text {
   margin-top: 2%;
+  font-size: inherit;
 }
 
 .content_date {
   text-align: right;
+  font-size: inherit;
 }
 
 .img-contain {
