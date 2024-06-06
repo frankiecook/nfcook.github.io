@@ -18,7 +18,7 @@ header_description: I code things into life.
 
 # about
 about_title: Louisiana Tech University 2024 Alumni
-about_description: I am a nerd from northern Louisiana who found a passion in Computer Science, which allowed me to successfully graduate from Louisiana Tech University. I am very excited about the future and where I'll end up, but my strongest interest are in software development and web-development.
+about_description: I am a nerd from Louisiana who found a passion in Computer Science, which allowed me to successfully graduate from Louisiana Tech University. I am very excited about the future and where I'll end up, but my strongest interest are in software development and web-development.
 
 # services
 service_title: Forever an Imperfect Perfectionist
@@ -54,146 +54,167 @@ project02_description: "A cyber security challenge where the programmer is taske
 project03_name: Selk
 project03_category: Game Development
 project03_date: Feb. 20, 2024
-project03_img: Selk-Folio.png
+project03_imgs: Selk-Folio.png
+project03_img: Selk-Folio-Demo.gif
 project03_description: "A sci-fi game that takes place inside a bio-dome on Saturn’s moon Titan. Three puzzle-type domes exist, but the focus was always on exploring a colorful and vibrant environment. Our team developed the game over a 10-week period, where I primarily focused on landscape and environment design, but did dabble in modeling and character animation.
 "
 
 project04_name: Dijkstra’s Implementation
 project04_category: Computer Networks
 project04_date: February 18, 2024
-project04_img: Dijkstra-Folio.png
+project04_imgs: Dijkstra-Folio.png
+project04_img: animatetest.gif
 project04_description: "A program that implements Dijkstra’s algorithm to compute the shortest path tree for a given CSV file that represents topology data. Program is executed through terminal commands.
 "
 
 project05_name: Ray-tracing Engine
 project05_category: Game Development
 project05_date: Feb. 17, 2024
-project05_img: Raytracing-Folio.png
+project05_imgs: Raytracing-Folio.png
+project05_img: Raytracing-Folio-Demo.gif
 project05_description: "A ray-tracing engine that is capable of rendering spheres and planes, as well as calculating reflective and refractive rays. Allows for the maximum distance and the number of reflections that occur to be controlled.
 "
 
 project06_name: Graphics Engine
 project06_category: Game Development
 project06_date: Jan. 22, 2024
-project06_img: 3D-Engine-Folio.png
+project06_imgs: 3D-Engine-Folio.png
+project06_img: animatetest.gif
 project06_description: "A 3D engine that is capable of rending objects, such as pyramids, boxes, and cylinders. Transformations can be applied to the currently selected object, such as rotation, scaling, translation, and a reset option; which is accessible through a GUI. Most impressively, five render and shading modes are available: wire-frame, polygon fill, flat shading, Gouraud shading, and Phong shading.
 "
 
 project07_name: Google Cloud Computing
 project07_category: Cyber Security
 project07_date: Nov. 17, 2023
-project07_img: noimage.png
+project07_imgs: noimage.png
+project07_img: animatetest.gif
 project07_description: "Spent a course operating in Google Cloud’s Skill Boost, where I learned about Kubernetes, Pub/Sub events, App Engine, autoscalling, NoSQL databases, routing tables, load balancing, and more. By the end of the course many of us were certified in Google’s Cloud Computing Foundation course.
 "
 
 project08_name: Horse Health Prediction
 project08_category: Data Mining
 project08_date: Nov. 16, 2023
-project08_img: noimage.png
+project08_imgs: noimage.png
+project08_img: animatetest.gif
 project08_description: "My team dived into a dataset containing horse veterinarian records to figure out if we could gather any meaningful correlations. We used Google Colab, along with Pandas, Numpy, and Seaborn, to develop software that could analyze 300 horse records from a CSV file.
 "
 
 project09_name: Cyberstorm
 project09_category: Cyber Security
 project09_date: Nov. 10, 2023
-project09_img: noimage.png
+project09_imgs: noimage.png
+project09_img: animatetest.gif
 project09_description: "Louisiana Tech’s own cyber security event, where teams of students competed against each other in a race for the most points. Everyone is bound to a 9 hour timer, making this an all day event! We used all our previous knowledge from the course to solve challenges, which included programs that could decode or encode binary, a Vigenere cipher, a covert ftp channel, a timelock program, an XOR crypto method, and a steganography program.
 "
 
 project10_name: Canvas / Gallery
 project10_category: Web Application
 project10_date: Aug. 25, 2023
-project10_img: noimage.png
+project10_imgs: noimage.png
+project10_img: animatetest.gif
 project10_description: "My most impressive web-project, the Canvas & Gallery serve an interconnected function. The Canvas allows visitors to draw, with a handful of tool options, anything they wish. Once finished they can choose to submit their image to a database. If you swap to the Gallery, every image from the database is displayed, which in turn showcases the user’s finished artwork.
 "
 
 project11_name: Guestbook
 project11_category: Web Application
 project11_date: Aug. 11, 2023
-project11_img: noimage.png
+project11_imgs: noimage.png
+project11_img: animatetest.gif
 project11_description: "A classic intro database project where visitors can sign their name. My guestbook prompts the user for their email,  name, and comment; saving information to a database. After this, just below the post button, all previous signatures are displayed with dates and timestamps.
 "
 
 project12_name: P3DE
 project12_category: Web Game Development
 project12_date: July 3, 2023
-project12_img: P3DE-Folio.png
+project12_imgs: P3DE-Folio.png
+project12_img: animatetest.gif
 project12_description: "An earnest attempt at recreating the original ray casting engines from the 90s for Doom/Wolfenstein type games. Nothing but a pseudo 3D environment, but I had fun with this sandbox! No goal exists, but you do load into a demo room with textures on walls, some animated textures, and the player has a weapon that makes walls disappear.
 "
 
 project13_name: StupidDuck
 project13_category: Web Game Development
 project13_date: Jan. 24, 2023
-project13_img: StupidDuck-Folio.png
+project13_imgs: StupidDuck-Folio.png
+project13_img: animatetest.gif
 project13_description: "An impressive 2D web-engine for a silly game that was built from scratch following Travis Vronman’s incredible tutorial. A boundless amount was learned about game engines and how developers tackle solutions. I found myself making more buses than city transit, stepping through animation control, and calculating transformations for objects.
 "
 
 project14_name: Kill the Phish
 project14_category: Web Application
 project14_date: Apr. 23, 2021
-project14_img: noimage.png
+project14_imgs: noimage.png
+project14_img: animatetest.gif
 project14_description: "A Google Chrome plugin that would warn users when they discover a malicious link on the current page simply by hovering over said link. A small pop-up box would denote whether the link was safe or not. Here my senior design team learned how to implement modern design strategies, such as waterfall, agile, Scrum, Kanban, UML diagrams, class diagrams, object oriented design patterns, software libraries, system documentation, analyzing a system, software evolution, and debugging/profiling.
 "
 
 project15_name: Car Rental Management
 project15_category: Database Management
 project15_date: Feb. 27, 2021
-project15_img: noimage.png
+project15_imgs: noimage.png
+project15_img: animatetest.gif
 project15_description: "Designed and implemented a car rental management system database using MySQL RDBMS. Also, I created an enhanced entity-relationship (EER) diagram and a relational schema diagram in MySQL Workbench Models. During implementation I used DDL commands, DML commands, triggers, views, and schema modification.
 "
 
 project16_name: Quantum Computer Architecture
 project16_category: Research
 project16_date: Feb. 2, 2021
-project16_img: noimage.png
+project16_imgs: noimage.png
+project16_img: animatetest.gif
 project16_description: "Research and a presentation about the state of quantum computer architecture, such as how researchers implement these devices by trapping ions, confining electrons, and superconducting circuits.
 "
 
 project17_name: Sand Simulator
 project17_category: Web Game Development
 project17_date: Dec. 26, 2020
-project17_img: Sand-Simulator-Folio.png
+project17_imgs: Sand-Simulator-Folio.png
+project17_img: animatetest.gif
 project17_description: "One of my earliest web-dev projects and is a very simplified 2D physics engine that simulates sand falling. Grains of sand rain down from the sky as pixels, which you can control the direction of.
 "
 
 project18_name: Cherry 2D Game
 project18_category: Game Development
 project18_date: Oct. 23, 2020
-project18_img: noimage.png
+project18_imgs: noimage.png
+project18_img: animatetest.gif
 project18_description: "A 2D game developed in C#, using a framework given by Dr. Cherry, where the player can interact with NPCs and collect items. From the onset this project was not about having a beautiful game, but, instead, heavily focused on implementing software design strategies like waterfall, agile, Scrum, Kanban, UML diagrams, class diagrams, object oriented design patterns, software libraries, system documentation, system analyzation, software evolution, and debugging/profiling.
 "
 
 project19_name: Non-deterministic Automata
 project19_category: Research
 project19_date: Nov. 18, 2020
-project19_img: noimage.png
+project19_imgs: noimage.png
+project19_img: animatetest.gif
 project19_description: "Team project that researched and presented on the limitations of non-derministic finite automata imposed by a one letter input alphabet. In this we decided to cover the theorems and proof for unreachable configurations and unreachable configurations of fixed size.
 "
 
 project20_name: Embedded Operating Systems
 project20_category: Research
 project20_date: May 14, 2020
-project20_img: noimage.png
+project20_imgs: noimage.png
+project20_img: animatetest.gif
 project20_description: "Research paper and final presentation that covered the history, applications, current state, advantages and disadvantages of embedded operating systems.
 "
 
 project21_name: Eternal Knight
 project21_category: Game Development
 project21_date: May 11, 2019
-project21_img: Eternal-Knight-Folio.png
+project21_imgs: Eternal-Knight-Folio.png
+project21_img: animatetest.gif
 project21_description: "Participated in a 48-hour video game competition where I served as the sole composer on our team. Our team comprised a developer, an artist, and myself as the composer. Remarkably, our project swiped 1st place!"
 
 project22_name: Pi Sonar
 project22_category: Raspberry Pi
 project22_date: Nov. 3, 2019
-project22_img: noimage.png
+project22_imgs: noimage.png
+project22_img: animatetest.gif
 project22_description: "Sonar device that combined a Raspberry Pi, 3D printed parts, digital servo, rotary connector, and an ultrasonic sensor. Our team rotated the sonar 360 degrees while sending ultrasonic rays out, so we could plot a 2D representation of the environment around it.
 "
 
 project23_name: Room Adventure
 project23_category: Raspberry Pi
 project23_date: Jul. 24, 2019
-project23_img: noimage.png
+project23_imgs: noimage.png
+project23_img: animatetest.gif
 project23_description: "Final project for a year long course in Python that challenged students to create a text-based room adventure game with graphics and a user interface for displaying text and taking user input.
 "
 
