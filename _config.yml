@@ -18,14 +18,14 @@ header_description: I code things into life.
 
 # about
 about_title: Louisiana Tech University 2024 Alumni
-about_description: I am a nerd from Louisiana who found a passion in Computer Science, which allowed me to successfully graduate from Louisiana Tech University. I am very excited about the future and where I'll end up, but my strongest interest are in software development and web-development.
+about_description: I am a nerd from Louisiana who found a passion in Computer Science, which allowed me to successfully graduate from Louisiana Tech University!
 
 # services
 service_title: Forever an Imperfect Perfectionist
 service01_title: Programming Teacher
-service01_description: Always open and excited to teach computer science in a 1-on-1 setting
+service01_description: Always excited and open to teach computer science
 service02_title: FrankieFrankie.xyz
-service02_description: "FrankieFrankie.xyz is my first website and, while not as pretty, holds many of my largest projects"
+service02_description: "FrankieFrankie.xyz is my first website and, while not as pretty, holds many of my personal projects"
 service03_title: Languages
 service03_description: Python, Java, C/C++, HTML, JavaScrip, CSS, TypeScript, and SQL
 service04_title: Software
@@ -38,7 +38,7 @@ contact_title: Let's Get In Touch!
 project01_name: Jekyll Website
 project01_category: Web Development
 project01_date: May 30, 2024
-project01_imgs: noimage.png
+project01_imgs: NFCook-Folio.png
 project01_img: animatetest.gif
 project01_description: "Hey, the very website you’re on right now! Jekyll is a framework for building web projects and generates static sites using Ruby. It’s fairly simple and I was able to get my website running through Netlify and Github.
 "
@@ -46,8 +46,8 @@ project01_description: "Hey, the very website you’re on right now! Jekyll is a
 project02_name: Axolotl
 project02_category: Cyber Security
 project02_date: Feb. 24, 2024
-project02_imgs: Axolotl-Portfolio.png
-project02_img: animatetest.gif
+project02_imgs: Axolotl-Folio.png
+project02_img: Axolotl-Folio-Demo.gif
 project02_description: "A cyber security challenge where the programmer is tasked with locating information concerning the whereabouts of their stolen dog. Organized into three levels it encourages the user to dig through a file system that contains some useful c files, a key, and a pygame application. Will you ever find your dog?
 "
 
@@ -63,7 +63,7 @@ project04_name: Dijkstra’s Implementation
 project04_category: Computer Networks
 project04_date: February 18, 2024
 project04_imgs: Dijkstra-Folio.png
-project04_img: animatetest.gif
+project04_img: Dijkstra-Folio-Demo.gif
 project04_description: "A program that implements Dijkstra’s algorithm to compute the shortest path tree for a given CSV file that represents topology data. Program is executed through terminal commands.
 "
 
@@ -79,7 +79,7 @@ project06_name: Graphics Engine
 project06_category: Game Development
 project06_date: Jan. 22, 2024
 project06_imgs: 3D-Engine-Folio.png
-project06_img: animatetest.gif
+project06_img: 3D-Engine-Folio-Demo.gif
 project06_description: "A 3D engine that is capable of rending objects, such as pyramids, boxes, and cylinders. Transformations can be applied to the currently selected object, such as rotation, scaling, translation, and a reset option; which is accessible through a GUI. Most impressively, five render and shading modes are available: wire-frame, polygon fill, flat shading, Gouraud shading, and Phong shading.
 "
 
@@ -110,16 +110,16 @@ project09_description: "Louisiana Tech’s own cyber security event, where teams
 project10_name: Canvas / Gallery
 project10_category: Web Application
 project10_date: Aug. 25, 2023
-project10_imgs: noimage.png
-project10_img: animatetest.gif
+project10_imgs: Canvas-Gallery-Folio.png
+project10_img: Canvas-Gallery-Folio-Demo.gif
 project10_description: "My most impressive web-project, the Canvas & Gallery serve an interconnected function. The Canvas allows visitors to draw, with a handful of tool options, anything they wish. Once finished they can choose to submit their image to a database. If you swap to the Gallery, every image from the database is displayed, which in turn showcases the user’s finished artwork.
 "
 
 project11_name: Guestbook
 project11_category: Web Application
 project11_date: Aug. 11, 2023
-project11_imgs: noimage.png
-project11_img: animatetest.gif
+project11_imgs: Guestbook-Folio.png
+project11_img: Guestbook-Folio-Demo.gif
 project11_description: "A classic intro database project where visitors can sign their name. My guestbook prompts the user for their email,  name, and comment; saving information to a database. After this, just below the post button, all previous signatures are displayed with dates and timestamps.
 "
 
@@ -127,7 +127,7 @@ project12_name: P3DE
 project12_category: Web Game Development
 project12_date: July 3, 2023
 project12_imgs: P3DE-Folio.png
-project12_img: animatetest.gif
+project12_img: P3DE-Folio-Demo.gif
 project12_description: "An earnest attempt at recreating the original ray casting engines from the 90s for Doom/Wolfenstein type games. Nothing but a pseudo 3D environment, but I had fun with this sandbox! No goal exists, but you do load into a demo room with textures on walls, some animated textures, and the player has a weapon that makes walls disappear.
 "
 
@@ -135,7 +135,7 @@ project13_name: StupidDuck
 project13_category: Web Game Development
 project13_date: Jan. 24, 2023
 project13_imgs: StupidDuck-Folio.png
-project13_img: animatetest.gif
+project13_img: StupidDuck-Folio-Demo.gif
 project13_description: "An impressive 2D web-engine for a silly game that was built from scratch following Travis Vronman’s incredible tutorial. A boundless amount was learned about game engines and how developers tackle solutions. I found myself making more buses than city transit, stepping through animation control, and calculating transformations for objects.
 "
 
@@ -167,15 +167,15 @@ project17_name: Sand Simulator
 project17_category: Web Game Development
 project17_date: Dec. 26, 2020
 project17_imgs: Sand-Simulator-Folio.png
-project17_img: animatetest.gif
+project17_img: Sand-Simulator-Folio-Demo.gif
 project17_description: "One of my earliest web-dev projects and is a very simplified 2D physics engine that simulates sand falling. Grains of sand rain down from the sky as pixels, which you can control the direction of.
 "
 
-project18_name: Cherry 2D Game
+project18_name: Cherry Game
 project18_category: Game Development
 project18_date: Oct. 23, 2020
-project18_imgs: noimage.png
-project18_img: animatetest.gif
+project18_imgs: Cherry-Game-Folio.png
+project18_img: Cherry-Game-Folio-Demo.gif
 project18_description: "A 2D game developed in C#, using a framework given by Dr. Cherry, where the player can interact with NPCs and collect items. From the onset this project was not about having a beautiful game, but, instead, heavily focused on implementing software design strategies like waterfall, agile, Scrum, Kanban, UML diagrams, class diagrams, object oriented design patterns, software libraries, system documentation, system analyzation, software evolution, and debugging/profiling.
 "
 
@@ -199,7 +199,7 @@ project21_name: Eternal Knight
 project21_category: Game Development
 project21_date: May 11, 2019
 project21_imgs: Eternal-Knight-Folio.png
-project21_img: animatetest.gif
+project21_img: Eternal-Knight-Folio-Demo.gif
 project21_description: "Participated in a 48-hour video game competition where I served as the sole composer on our team. Our team comprised a developer, an artist, and myself as the composer. Remarkably, our project swiped 1st place!"
 
 project22_name: Pi Sonar
@@ -213,8 +213,8 @@ project22_description: "Sonar device that combined a Raspberry Pi, 3D printed pa
 project23_name: Room Adventure
 project23_category: Raspberry Pi
 project23_date: Jul. 24, 2019
-project23_imgs: noimage.png
-project23_img: animatetest.gif
+project23_imgs: Room-Adventure-Folio.png
+project23_img: Room-Adventure-Folio-Demo.gif
 project23_description: "Final project for a year long course in Python that challenged students to create a text-based room adventure game with graphics and a user interface for displaying text and taking user input.
 "
 
