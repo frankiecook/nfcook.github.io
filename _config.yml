@@ -86,24 +86,24 @@ project06_description: "A 3D engine that is capable of rending objects, such as 
 project07_name: Google Cloud Computing
 project07_category: Cyber Security
 project07_date: Nov. 17, 2023
-project07_imgs: noimage.png
-project07_img: animatetest.gif
+project07_imgs: Google-Cloud-Folio.png
+project07_img: Google-Cloud-Folio-Demo.gif
 project07_description: "Spent a course operating in Google Cloud’s Skill Boost, where I learned about Kubernetes, Pub/Sub events, App Engine, autoscalling, NoSQL databases, routing tables, load balancing, and more. By the end of the course many of us were certified in Google’s Cloud Computing Foundation course.
 "
 
 project08_name: Horse Health Prediction
 project08_category: Data Mining
 project08_date: Nov. 16, 2023
-project08_imgs: noimage.png
-project08_img: animatetest.gif
+project08_imgs: Horse-Health-Folio.png
+project08_img: Horse-Health-Folio-Demo.gif
 project08_description: "My team dived into a dataset containing horse veterinarian records to figure out if we could gather any meaningful correlations. We used Google Colab, along with Pandas, Numpy, and Seaborn, to develop software that could analyze 300 horse records from a CSV file.
 "
 
 project09_name: Cyberstorm
 project09_category: Cyber Security
 project09_date: Nov. 10, 2023
-project09_imgs: noimage.png
-project09_img: animatetest.gif
+project09_imgs: Cyberstorm-Folio.png
+project09_img: Cyberstorm-Folio-Demo.gif
 project09_description: "Louisiana Tech’s own cyber security event, where teams of students competed against each other in a race for the most points. Everyone is bound to a 9 hour timer, making this an all day event! We used all our previous knowledge from the course to solve challenges, which included programs that could decode or encode binary, a Vigenere cipher, a covert ftp channel, a timelock program, an XOR crypto method, and a steganography program.
 "
 
