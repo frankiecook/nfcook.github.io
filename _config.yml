@@ -18,7 +18,7 @@ header_description: I code things into life.
 
 # about
 about_title: Louisiana Tech University 2024 Alumni
-about_description: I am a nerd from Louisiana who found a passion in Computer Science, which allowed me to successfully graduate from Louisiana Tech University!
+about_description: I am a nerd from Louisiana who found a passion in Computer Science, which propelled me to graduate from Louisiana Tech University!
 
 # services
 service_title: Forever an Imperfect Perfectionist
@@ -158,8 +158,8 @@ project15_description: "Designed and implemented a car rental management system 
 project16_name: Quantum Computer Architecture
 project16_category: Research
 project16_date: Feb. 2, 2021
-project16_imgs: noimage.png
-project16_img: animatetest.gif
+project16_imgs: Quantum-Architecture-Folio.png
+project16_img: Quantum-Architecture-Folio-Demo.gif
 project16_description: "Research and a presentation about the state of quantum computer architecture, such as how researchers implement these devices by trapping ions, confining electrons, and superconducting circuits.
 "
 
@@ -182,16 +182,16 @@ project18_description: "A 2D game developed in C#, using a framework given by Dr
 project19_name: Non-deterministic Automata
 project19_category: Research
 project19_date: Nov. 18, 2020
-project19_imgs: noimage.png
-project19_img: animatetest.gif
+project19_imgs: Automata-Folio.png
+project19_img: Automata-Folio-Demo.gif
 project19_description: "Team project that researched and presented on the limitations of non-derministic finite automata imposed by a one letter input alphabet. In this we decided to cover the theorems and proof for unreachable configurations and unreachable configurations of fixed size.
 "
 
 project20_name: Embedded Operating Systems
 project20_category: Research
 project20_date: May 14, 2020
-project20_imgs: noimage.png
-project20_img: animatetest.gif
+project20_imgs: Embedded-OS-Folio.png
+project20_img: Embedded-OS-Folio-Demo.gif
 project20_description: "Research paper and final presentation that covered the history, applications, current state, advantages and disadvantages of embedded operating systems.
 "
 
@@ -205,8 +205,8 @@ project21_description: "Participated in a 48-hour video game competition where I
 project22_name: Pi Sonar
 project22_category: Raspberry Pi
 project22_date: Nov. 3, 2019
-project22_imgs: noimage.png
-project22_img: animatetest.gif
+project22_imgs: Pi-Sonar-Folio.png
+project22_img: Pi-Sonar-Folio-Demo.gif
 project22_description: "Sonar device that combined a Raspberry Pi, 3D printed parts, digital servo, rotary connector, and an ultrasonic sensor. Our team rotated the sonar 360 degrees while sending ultrasonic rays out, so we could plot a 2D representation of the environment around it.
 "
 
