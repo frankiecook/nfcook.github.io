@@ -142,16 +142,16 @@ project13_description: "An impressive 2D web-engine for a silly game that was bu
 project14_name: Kill the Phish
 project14_category: Web Application
 project14_date: Apr. 23, 2021
-project14_imgs: noimage.png
-project14_img: animatetest.gif
+project14_imgs: Kill-the-Phish-Folio.png
+project14_img: Kill-the-Phish-Folio-Demo.gif
 project14_description: "A Google Chrome plugin that would warn users when they discover a malicious link on the current page simply by hovering over said link. A small pop-up box would denote whether the link was safe or not. Here my senior design team learned how to implement modern design strategies, such as waterfall, agile, Scrum, Kanban, UML diagrams, class diagrams, object oriented design patterns, software libraries, system documentation, analyzing a system, software evolution, and debugging/profiling.
 "
 
-project15_name: Car Rental Management
+project15_name: Car Rental Service
 project15_category: Database Management
 project15_date: Feb. 27, 2021
-project15_imgs: noimage.png
-project15_img: animatetest.gif
+project15_imgs: Car-Rental-Folio.png
+project15_img: Car-Rental-Folio-Demo.gif
 project15_description: "Designed and implemented a car rental management system database using MySQL RDBMS. Also, I created an enhanced entity-relationship (EER) diagram and a relational schema diagram in MySQL Workbench Models. During implementation I used DDL commands, DML commands, triggers, views, and schema modification.
 "
 
