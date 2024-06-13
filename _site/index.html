@@ -693,11 +693,13 @@
             var rect = element.getBoundingClientRect();
             var elementTop = rect.top+(window.scrollY||window.pageYOffset)
             var elementHeight = rect.bottom-rect.top;
-            var scrollPosition = getScrollPosition();
-            //console.log(scrollPosition);
-            //console.log(touchY);
+            var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            var scrollPosition = getScrollPosition()+viewportHeight/2;
+            var offset = 3;
+            console.log("scrollPos: "+scrollPosition);
+            console.log("touchY: "+touchY);
             
-            var scrolledPercentage = ((touchY - elementTop) / elementHeight) * 100;
+            var scrolledPercentage = (((scrollPosition - elementTop) / elementHeight) * 100) + offset;
 
             if (scrolledPercentage < 1) {
                 scrolledPercentage = 0; // no weird -0
@@ -796,6 +798,16 @@
             var scrollPosition = window.scrollY || window.pageYOffset;
             return scrollPosition;
         }
+
+        // Function to get the height of the scrollbar
+        function getScrollbarHeight() {
+            var scrollbarHeight = document.documentElement.offsetHeight - document.documentElement.clientHeight;
+            return scrollbarHeight;
+        }
+
+        // Example usage
+        var scrollbarHeight = getScrollbarHeight();
+        console.log('Scrollbar height:', scrollbarHeight);
     });
 </script>
     <aside class="bg-dark" id="cv-resume">
