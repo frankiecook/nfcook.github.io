@@ -108,32 +108,34 @@
             </div>
         </div>
     </div>
+    <!-- Font Awesome
+    'fa' gives scalable vector icons -->
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                    <i class="fa fa-4x fa-book wow bounceIn text-primary"></i>
                     <h3>Programming Teacher</h3>
-                    <p class="text-muted">Always excited and open to teach computer science</p>
+                    <p class="text-muted">Always excited and open to teach computer science in 1-on-1 lessons</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>FrankieFrankie.xyz</h3>
-                    <p class="text-muted">FrankieFrankie.xyz is my first website and, while not as pretty, holds many of my personal projects</p>
+                    <p class="text-muted">FrankieFrankie.xyz is my first website and holds many of my personal web-projects</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <i class="fa fa-4x fa-code wow bounceIn text-primary" data-wow-delay=".2s"></i>
                     <h3>Languages</h3>
                     <p class="text-muted">Python, Java, C/C++, HTML, JavaScrip, CSS, TypeScript, and SQL</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <i class="fa fa-4x fa-desktop wow bounceIn text-primary" data-wow-delay=".3s"></i>
                     <h3>Software</h3>
                     <p class="text-muted">Raspberry Pi, Materials Studio, FABRIC, Google Colab, Solidworks, MATLAB, COMSOL, Arduino, UML</p>
                 </div>
@@ -198,8 +200,18 @@
                     </div>
                 </button>
                 <div class="content">
-                    <p class="content_text">A cyber security challenge where the programmer is tasked with locating information concerning the whereabouts of their stolen dog. Organized into three levels it encourages the user to dig through a file system that contains some useful c files, a key, and a pygame application. Will you ever find your dog? </p>
-                    <p class="content_date">Feb. 24, 2024</p>
+                    <div class="content-project-container">
+                        <div class="content-project-category">
+                            Cyber Security
+                        </div>
+                        <div class="content-project-name">
+                            Axolotl
+                        </div>
+                    </div>
+                    <div class="content-container">
+                        <p class="content_text">A cyber security challenge where the programmer is tasked with locating information concerning the whereabouts of their stolen dog. Organized into three levels it encourages the user to dig through a file system that contains some useful c files, a key, and a pygame application. Will you ever find your dog? </p>
+                        <p class="content_date">Feb. 24, 2024</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-element">
@@ -666,6 +678,125 @@
             }
         });
     }
+
+    // dynamic selector
+    // gather all elements of the portfolio
+    // determine selected through two rules
+    // 1) element that shows most in viewport
+    // 2) element that is highest on screen
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.querySelectorAll('.portfolio-element');
+        var touchY = 0;
+
+        // Function to calculate the percentage of an element that has been scrolled through
+        function calculateScrolledPercentage(element) {
+            var rect = element.getBoundingClientRect();
+            var elementTop = rect.top+(window.scrollY||window.pageYOffset)
+            var elementHeight = rect.bottom-rect.top;
+            var scrollPosition = getScrollPosition();
+            //console.log(scrollPosition);
+            //console.log(touchY);
+            
+            var scrolledPercentage = ((touchY - elementTop) / elementHeight) * 100;
+
+            if (scrolledPercentage < 1) {
+                scrolledPercentage = 0; // no weird -0
+            } else if (scrolledPercentage > 100) {
+                scrolledPercentage = 100;
+            }
+            return Math.round(scrolledPercentage);
+        }
+
+        // Check if an element is in viewport
+        // function isInViewport(el) {
+        //     var rect = el.getBoundingClientRect();
+        //     return (
+        //     rect.top >= 0 &&
+        //     //rect.left >= 0 &&
+        //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) //&&
+        //     //rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        //     );
+        // }
+
+        // check if element is higher that all other elements
+        // function isHigher(element) {
+        //     console.log("isHigher");
+        //     //elements.forEach(function(element) {
+        //         var rectCurEl = curElement.getBoundingClientRect();
+        //         var rectEl = element.getBoundingClientRect();
+
+        //         console.log(rectCurEl);
+        //         console.log(rectEl);
+        //         // update current element if higher
+        //         if (rectEl.top < rectCurEl.top) {
+        //             curElement = checkElement;
+        //             return true
+        //         }
+        //         console.log("fail");
+
+        //         return false
+        //     //});
+        // }
+
+        // Check each selectable elements
+        // function isSelectable(element) {
+        //     if (isInViewport(element) && isHigher(element)) {
+        //         return true
+        //     }
+
+        //     return false
+        // }
+
+        // Handle scrolling
+        // function onScroll() {
+        //     elements.forEach(function(element) {
+        //         if (isSelectable(element)) {
+        //             element.classList.add('selected'); // Apply class when element is in view
+        //             console.log("selected");
+        //         } else {
+        //             element.classList.remove('selected'); // Remove class when element is not in view
+        //         }
+        //     });
+        // }
+
+        // Initial check on page load
+        //onScroll();
+
+        var myElement = document.getElementById('portfolio');
+        // Listen for scroll events
+        window.addEventListener('scroll', function() {
+            var visibilityPercentage = calculateScrolledPercentage(myElement);
+
+            var elementsLength = elements.length - 1;
+            var decimal = visibilityPercentage / 100;
+            var i = Math.floor(elementsLength * decimal);
+            var scrollElement = elements[i];
+
+            elements.forEach(function(element) {
+                if (element === scrollElement) {
+                    element.classList.add('selected'); // Apply class when element is in view
+                } else {
+                    element.classList.remove('selected'); // Remove class when element is not in view
+                }
+            });
+        });
+
+        // Function to track touch position
+        function trackTouchPosition(event) {
+            var touch = event.touches[0];
+            var touchX = touch.clientX + window.pageXOffset;
+            touchY = touch.clientY + window.pageYOffset;
+        }
+
+        // Example usage
+        document.addEventListener('touchmove', trackTouchPosition);
+
+        // Function to get the visitor's current scrolling position
+        function getScrollPosition() {
+            var scrollPosition = window.scrollY || window.pageYOffset;
+            return scrollPosition;
+        }
+    });
 </script>
     <aside class="bg-dark" id="cv-resume">
       <div class="container text-center">
