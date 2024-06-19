@@ -455,8 +455,9 @@ body {
 
 .portfolio-element {
     margin: 1%;
-    width: 436px;
-    aspect-ratio: 2 / 1;
+    width: 400px;
+    height: auto;
+    //aspect-ratio: 2 / 1;
 
     // &:hover {
     //     .img-static {
@@ -471,7 +472,6 @@ body {
 
 .new-portfolio-container {
     width: 100%;
-    margin-bottom: 1%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -483,3 +483,9 @@ body {
 *   between all of these rulesets
 */
 
+
+/*  OVERRIDING BOOTSTRAP
+*/
+.container-fluid {
+    padding: 0 !important;
+}

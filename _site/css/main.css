@@ -469,13 +469,12 @@ body {
 
 .portfolio-element {
   margin: 1%;
-  width: 436px;
-  aspect-ratio: 2/1;
+  width: 400px;
+  height: auto;
 }
 
 .new-portfolio-container {
   width: 100%;
-  margin-bottom: 1%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -486,5 +485,10 @@ body {
 *   Probably most likeyl lots of overlap and redundant and cancellation
 *   between all of these rulesets
 */
+/*  OVERRIDING BOOTSTRAP
+*/
+.container-fluid {
+  padding: 0 !important;
+}
 
 /*# sourceMappingURL=main.css.map */
