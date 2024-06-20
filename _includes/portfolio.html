@@ -787,7 +787,6 @@
             elements.forEach(function(element) {
                 // location inside viewport
                 var isVisible = isInViewport(element);
-                console.log(isVisible);
 
                 if (isVisible && !isMouse) {
                     element.classList.add('selected'); // Apply class when element is in view
@@ -802,10 +801,19 @@
         container.addEventListener('mouseover', removeSelected, false);
         container.addEventListener('mousemove', removeSelected, false);
         container.addEventListener('mouseenter', removeSelected, false);
+        container.addEventListener('touchstart', touch, false);
+        container.addEventListener('touchmove', touch, false);
+        container.addEventListener('touchend', touch, false);
+
+        function touch() {
+            isMouse = false;
+        }
 
         function removeSelected() {
             // update isMouse
+            alert('before probelm');
             isMouse = true;
+            alert('after probelm');
 
             // if hover is triggered, then remove all scroll selection (remove dynamic hovering)
             elements.forEach(function(element) {
@@ -818,7 +826,7 @@
             element.addEventListener('mouseover', hover, false);
             element.addEventListener('mousemove', hover, false);
             element.addEventListener('mouseenter', hover, false);
-hover
+
             function hover() {
                 // if hover is triggered, then remove all scroll selection (remove dynamic hovering)
                 elements.forEach(function(el) {
