@@ -145,9 +145,9 @@
 </section>
 
   <section class="no-padding" id="portfolio">
-    <div class="container-fluid">
+    <div class="container-fluid" id="container-fluid">
         <!-- <div class="row no-gutter test-center"> -->
-        <div class="new-portfolio-container">
+        <div class="new-portfolio-container" id="new-portfolio-container">
             <!--ORIGINAL STRUCTURE
             <div class="col-lg-4 col-sm-6">
                 <a href="#" class="portfolio-box">
@@ -904,130 +904,76 @@
     // determine selected through two rules
     // 1) element that shows most in viewport
     // 2) element that is highest on screen
+
+    // DOMContentLoaded is an event triggered when pure html is loaded (not images, css, etc.)
     document.addEventListener("DOMContentLoaded", function() {
-        // var elements = document.querySelectorAll('.portfolio-element');
-        // var touchY = 0;
+        // elements are gathered in top to bottom order from html
+        var elements = document.querySelectorAll('.portfolio-element');
+        var isMouse = false;
 
-        // // Function to calculate the percentage of an element that has been scrolled through
-        // function calculateScrolledPercentage(element) {
-        //     var rect = element.getBoundingClientRect();
-        //     var elementTop = rect.top+(window.scrollY||window.pageYOffset)
-        //     var elementHeight = rect.bottom-rect.top;
-        //     var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-        //     var scrollPosition = getScrollPosition()+viewportHeight/2;
-        //     var offset = 3;
-        //     console.log("scrollPos: "+scrollPosition);
-        //     console.log("touchY: "+touchY);
-            
-        //     var scrolledPercentage = (((scrollPosition - elementTop) / elementHeight) * 100) + offset;
+        // Check if an element is in viewport (y direction only)
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            var adjustedViewportTop = 50;
+            var multiplier = 1.98; // between 1 and 2 (only one row of elements affected)
+            var adjustedViewportBottom = adjustedViewportTop + (rect.bottom - rect.top) * multiplier;
 
-        //     if (scrolledPercentage < 1) {
-        //         scrolledPercentage = 0; // no weird -0
-        //     } else if (scrolledPercentage > 100) {
-        //         scrolledPercentage = 100;
-        //     }
-        //     return Math.round(scrolledPercentage);
-        // }
+            return (
+                rect.top >= adjustedViewportTop &&
+                rect.bottom <= adjustedViewportBottom
+            );
+        }
 
-        // Check if an element is in viewport
-        // function isInViewport(el) {
-        //     var rect = el.getBoundingClientRect();
-        //     return (
-        //     rect.top >= 0 &&
-        //     //rect.left >= 0 &&
-        //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) //&&
-        //     //rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        //     );
-        // }
+        // target element for calculating visibility percentage
+        var targetElement = document.getElementById('new-portfolio-container');
 
-        // check if element is higher that all other elements
-        // function isHigher(element) {
-        //     console.log("isHigher");
-        //     //elements.forEach(function(element) {
-        //         var rectCurEl = curElement.getBoundingClientRect();
-        //         var rectEl = element.getBoundingClientRect();
+        // scroll event fires when an element's scrollbar is scrolled (mouse or touch)
+        window.addEventListener('scroll', function() {
+            // check location of each portfolio element
+            elements.forEach(function(element) {
+                // location inside viewport
+                var isVisible = isInViewport(element);
+                console.log(isVisible);
 
-        //         console.log(rectCurEl);
-        //         console.log(rectEl);
-        //         // update current element if higher
-        //         if (rectEl.top < rectCurEl.top) {
-        //             curElement = checkElement;
-        //             return true
-        //         }
-        //         console.log("fail");
+                if (isVisible && !isMouse) {
+                    element.classList.add('selected'); // Apply class when element is in view
+                } else {
+                    element.classList.remove('selected'); // Remove class when element is not in view
+                }
+            });
+        });
 
-        //         return false
-        //     //});
-        // }
+        // Event listener for mouseover (equivalent to :hover)
+        var container = document.getElementById("container-fluid");
+        container.addEventListener('mouseover', removeSelected, false);
+        container.addEventListener('mousemove', removeSelected, false);
+        container.addEventListener('mouseenter', removeSelected, false);
 
-        // Check each selectable elements
-        // function isSelectable(element) {
-        //     if (isInViewport(element) && isHigher(element)) {
-        //         return true
-        //     }
+        function removeSelected() {
+            // update isMouse
+            isMouse = true;
 
-        //     return false
-        // }
+            // if hover is triggered, then remove all scroll selection (remove dynamic hovering)
+            elements.forEach(function(element) {
+                //element.classList.remove('selected');
+            });  
+        }
 
-        // Handle scrolling
-        // function onScroll() {
-        //     elements.forEach(function(element) {
-        //         if (isSelectable(element)) {
-        //             element.classList.add('selected'); // Apply class when element is in view
-        //             console.log("selected");
-        //         } else {
-        //             element.classList.remove('selected'); // Remove class when element is not in view
-        //         }
-        //     });
-        // }
+        // Event listener for mouseover (equivalent to :hover)
+        elements.forEach(function(element) {
+            element.addEventListener('mouseover', hover, false);
+            element.addEventListener('mousemove', hover, false);
+            element.addEventListener('mouseenter', hover, false);
+hover
+            function hover() {
+                // if hover is triggered, then remove all scroll selection (remove dynamic hovering)
+                elements.forEach(function(el) {
+                    el.classList.remove('selected');
+                });  
 
-        // Initial check on page load
-        //onScroll();
-
-        // var myElement = document.getElementById('portfolio');
-        // // Listen for scroll events
-        // window.addEventListener('scroll', function() {
-        //     var visibilityPercentage = calculateScrolledPercentage(myElement);
-
-        //     var elementsLength = elements.length - 1;
-        //     var decimal = visibilityPercentage / 100;
-        //     var i = Math.floor(elementsLength * decimal);
-        //     var scrollElement = elements[i];
-
-        //     elements.forEach(function(element) {
-        //         if (element === scrollElement) {
-        //             element.classList.add('selected'); // Apply class when element is in view
-        //         } else {
-        //             element.classList.remove('selected'); // Remove class when element is not in view
-        //         }
-        //     });
-        // });
-
-        // // Function to track touch position
-        // function trackTouchPosition(event) {
-        //     var touch = event.touches[0];
-        //     var touchX = touch.clientX + window.pageXOffset;
-        //     touchY = touch.clientY + window.pageYOffset;
-        // }
-
-        // // Example usage
-        // document.addEventListener('touchmove', trackTouchPosition);
-
-        // // Function to get the visitor's current scrolling position
-        // function getScrollPosition() {
-        //     var scrollPosition = window.scrollY || window.pageYOffset;
-        //     return scrollPosition;
-        // }
-
-        // // Function to get the height of the scrollbar
-        // function getScrollbarHeight() {
-        //     var scrollbarHeight = document.documentElement.offsetHeight - document.documentElement.clientHeight;
-        //     return scrollbarHeight;
-        // }
-
-        // // Example usage
-        // var scrollbarHeight = getScrollbarHeight();
-        // console.log('Scrollbar height:', scrollbarHeight);
+                element.classList.add('selected');
+            }
+        });
     });
 </script>
     <aside class="bg-dark" id="cv-resume">
