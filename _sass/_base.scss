@@ -372,7 +372,17 @@ body {
 
     .portfolio-box-caption {
         opacity: 0 !important;
-        border-radius: 5px;
+    }
+
+    .img-contain {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        /* object-fit cover will clip the image to fit the container*/
+        object-fit: cover;
     }
 }
 
@@ -410,7 +420,8 @@ body {
     overflow: hidden;
     font-size: small;
     transition: max-height 0.2s ease-out;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: 100%;
     background-color: rgba( $theme-primary, .9 );
 }
@@ -438,9 +449,6 @@ body {
 .img-contain {
     width: 100%;
     height: 100%;
-    // border-style: solid;
-    // border-width: thick;
-    // border-color: black;
     border-radius: 5px;
     /* object-fit cover will clip the image to fit the container*/
     object-fit: cover;
@@ -454,17 +462,6 @@ body {
     margin: 1%;
     width: 400px;
     height: auto;
-    //aspect-ratio: 2 / 1;
-
-    // &:hover {
-    //     .img-static {
-    //         display: none;
-    //     }
-
-    //     .img-gif {
-    //         display: block;
-    //     }
-    // }
 }
 
 .new-portfolio-container {

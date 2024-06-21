@@ -763,7 +763,7 @@
     document.addEventListener("DOMContentLoaded", function() {
         // elements are gathered in top to bottom order from html
         var elements = document.querySelectorAll('.portfolio-element');
-        var isMouse = false;
+        var lastElement = 0;
 
         // Check if an element is in viewport (y direction only)
         function isInViewport(element) {
@@ -778,63 +778,52 @@
             );
         }
 
-        // target element for calculating visibility percentage
-        var targetElement = document.getElementById('new-portfolio-container');
+        // Function to detect if the user is on a mobile device
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
 
-        // scroll event fires when an element's scrollbar is scrolled (mouse or touch)
-        window.addEventListener('scroll', function() {
-            // check location of each portfolio element
+        // Example of using the detection function
+        if (isMobileDevice()) {
+            // Execute code specific to mobile devices
+            console.log("Mobile device detected!");
+
+            // scroll event fires when an element's scrollbar is scrolled (mouse or touch)
+            window.addEventListener('scroll', function() {
+                // check location of each portfolio element
+                elements.forEach(function(element) {
+                    // location inside section of viewport (offset in y direction)
+                    var isVisible = isInViewport(element);
+
+                    if (isVisible) {
+                        element.classList.add('selected'); // Apply class when element is in view
+                    } else {
+                        element.classList.remove('selected'); // Remove class when element is not in view
+                    }
+                });
+            });
+        } else {
+            console.log("Not a mobile device.");
+
+            // Event listener for mouseover (equivalent to :hover)
             elements.forEach(function(element) {
-                // location inside viewport
-                var isVisible = isInViewport(element);
+                element.addEventListener('mouseover', hover, false);
+                element.addEventListener('mousemove', hover, false);
+                element.addEventListener('mouseenter', hover, false);
 
-                if (isVisible && !isMouse) {
-                    element.classList.add('selected'); // Apply class when element is in view
-                } else {
-                    element.classList.remove('selected'); // Remove class when element is not in view
+                function hover() {
+                    // exit early
+                    if (element === lastElement) {return}
+
+                    // if hover is triggered, then remove all scroll selection (remove dynamic hovering)
+                    elements.forEach(function(el) {
+                        el.classList.remove('selected');
+                    });  
+
+                    element.classList.add('selected');
+                    lastElement = element;
                 }
             });
-        });
-
-        // Event listener for mouseover (equivalent to :hover)
-        var container = document.getElementById("container-fluid");
-        container.addEventListener('mouseover', removeSelected, false);
-        container.addEventListener('mousemove', removeSelected, false);
-        container.addEventListener('mouseenter', removeSelected, false);
-        container.addEventListener('touchstart', touch, false);
-        container.addEventListener('touchmove', touch, false);
-        container.addEventListener('touchend', touch, false);
-
-        function touch() {
-            isMouse = false;
         }
-
-        function removeSelected() {
-            // update isMouse
-            //alert('before probelm');
-            isMouse = true;
-            //alert('after probelm');
-
-            // if hover is triggered, then remove all scroll selection (remove dynamic hovering)
-            elements.forEach(function(element) {
-                //element.classList.remove('selected');
-            });  
-        }
-
-        // Event listener for mouseover (equivalent to :hover)
-        elements.forEach(function(element) {
-            element.addEventListener('mouseover', hover, false);
-            element.addEventListener('mousemove', hover, false);
-            element.addEventListener('mouseenter', hover, false);
-
-            function hover() {
-                // if hover is triggered, then remove all scroll selection (remove dynamic hovering)
-                elements.forEach(function(el) {
-                    el.classList.remove('selected');
-                });  
-
-                element.classList.add('selected');
-            }
-        });
     });
 </script>
