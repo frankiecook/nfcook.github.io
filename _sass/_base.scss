@@ -472,6 +472,15 @@ body {
     justify-content: center;
 }
 
+.padding-lr-small {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.padding-lr-large {
+    padding-left: 30px !important;
+}
+
 /* Overlap Between Rulesets
 *   Probably most likeyl lots of overlap and redundant and cancellation
 *   between all of these rulesets
